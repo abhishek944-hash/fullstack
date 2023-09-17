@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pexels1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    background-color: 515258;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: rgb(0, 0, 64);
+}
+
+/* Style for the Home button */
+a {
+    text-decoration: none;
+}
+
+/* Animation for the container */
+.animate__animated {
+    animation-duration: 1.5s;
+}
+
+/* Animation for the form */
+form.animate__animated {
+    animation-duration: 1s;
+}
+
+/* Animation for the submit button */
+input[type="submit"].animate__animated {
+    animation-duration: 1s;
+}
+
+/* Animation for the Home button */
+a.animate__animated {
+    animation-duration: 1s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+	body{	
+		    font-family: Arial, sans-serif;
+		    background-image: url("home.jpg");
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    margin: 0;
+		    padding: 0;
+		}
+
+        ul.navbar {
+            list-style-type: none;
+            padding: 10px;
+            background-color: #333;
+            overflow: hidden;
+            text-align: right;
+        }
+
+        ul.navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul.navbar li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        ul.navbar li a:hover {
+            color: #00bcd4;
+        }
+        
+	    @media screen and (max-width: 768px) {
+		    ul.navbar {
+		        flex-direction: column;
+		    }
+		
+		    ul.navbar li {
+		        display: block;
+		        margin-bottom: 10px;
+		    }
+	   }

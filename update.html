@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="update.css">
+</head>
+<body>
+
+    <h1 class="animate__animated animate__fadeIn">Update Employee Information</h1>
+
+    <form action="Update" method="POST">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+        <div class="form-group animate__animated animate__fadeIn">
+            <label for="option">Select Option:</label>
+            <select id="option" name="option" required onchange="showInputField()">
+                <option value="">Select option</option>
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="salary">Salary</option>
+                <option value="department">Department</option>
+            </select>
+        </div>
+
+        <div id="inputField" style="display: none;" class="animate__animated animate__fadeIn">
+            <label for="input">Enter Value:</label>
+            <input type="text" id="input" name="value">
+        </div>
+
+        <input type="submit" value="Update" class="animate__animated animate__fadeIn">
+
+    </form>
+    <a href="index.html"><input type="submit" value="Home" class="animate__animated animate__fadeIn"></a>
+		
+    <script>
+        function showInputField() {
+            var selectedOption = document.getElementById("option").value;
+            var inputField = document.getElementById("inputField");
+
+            if (selectedOption === "") {
+                inputField.style.display = "none";
+            } else {
+                inputField.style.display = "block";
+                document.getElementById("input").setAttribute("name", selectedOption);
+            }
+        }
+    </script>
+
+</body>
+</html>
